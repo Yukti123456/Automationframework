@@ -13,7 +13,7 @@ class Test_001_AccountReg:
     #Fetching the base URL from config.ini file using ReadConfig class
     baseURL = readProperties.ReadConfig.getApplicationURL()
     loggen = LogGen.logger()
-    @pytest.mark.regression
+    @pytest.mark.sanity
     def test_account_reg(self,setup):
         self.loggen.info("******Registration Started******")
         self.driver = setup
