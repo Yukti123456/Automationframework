@@ -41,6 +41,7 @@ class Test_001_AccountReg:
         self.confmsg=self.regPage.getConfirmation()
 
         if self.confmsg == "Your Account Has Been Created!":
+            sleep(3)
             assert True
             self.loggen.info("******Account Registration Successful******")
             self.driver.close()
