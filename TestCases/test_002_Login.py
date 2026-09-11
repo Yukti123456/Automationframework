@@ -16,8 +16,9 @@ class Test_001_Account_Login:
     loggen = LogGen.logger()
     user = ReadConfig.getUserEmail()
     password = ReadConfig.getPassword()
-    def test_account_reg(self,setup):
 
+    @pytest.mark.sanity
+    def test_account_reg(self,setup):
         self.loggen.info("******Login Started******")
         self.driver = setup
         self.driver.get(self.baseURL)

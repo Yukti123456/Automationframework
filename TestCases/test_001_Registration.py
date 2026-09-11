@@ -7,10 +7,13 @@ import  os
 from time import sleep
 from Utilities import readProperties
 from Utilities.customLogger import LogGen
+import pytest
+
 class Test_001_AccountReg:
     #Fetching the base URL from config.ini file using ReadConfig class
     baseURL = readProperties.ReadConfig.getApplicationURL()
     loggen = LogGen.logger()
+    @pytest.mark.regression
     def test_account_reg(self,setup):
         self.loggen.info("******Registration Started******")
         self.driver = setup

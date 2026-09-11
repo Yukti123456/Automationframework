@@ -1,0 +1,1 @@
+ pytest -s -v .\TestCases\ -m "sanity" --browser chrome

@@ -9,6 +9,7 @@ import  os
 from time import sleep
 from Utilities import readProperties
 from Utilities.customLogger import LogGen
+import pytest
 
 class Test_001_AccountLogin_DDT:
     #Fetching the base URL from config.ini file using ReadConfig class
