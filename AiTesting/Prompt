@@ -1,0 +1,14 @@
+Generate and execute a Playwright test using pytest and Selenium MCP.
+Test Scenario:
+Open https://practicetestautomation.com/practice-test-login/
+Login with valid id and password
+Verify that Logout button is displayed after login
+Implementation Requirements:
+Use pytest-style structure (functions starting with test_).
+Execute each step interactively through Selenium MCP tools.
+Once all steps succeed, generate and save the final test script as AiTesting/login.py.
+Run the saved test automatically in headed mode (browser visible).
+If any step or assertion fails, identify and fix the issue, then rerun until the test passes.
+Expected Output:
+A fully working Selenium + pytest test script.
+The script should automate the complete flow described above and successfully validate the product name in the results.
